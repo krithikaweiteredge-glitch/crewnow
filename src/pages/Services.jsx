@@ -25,7 +25,7 @@ export default function Services() {
               </Reveal>
               <Reveal delay={0.08}>
                 <span className="pill">{s.tag}</span>
-                <h2 style={{ fontSize: 'clamp(1.9rem,3.4vw,2.6rem)' }}>{s.title}</h2>
+                <h2 style={{ fontSize: 'clamp(2.4rem,4.2vw,3.4rem)' }}>{s.title}</h2>
                 <p className="lead">{s.short}</p>
                 <ul className="ticks">
                   {s.items.map((it) => <li key={it}><Check size={18} strokeWidth={3} />{it}</li>)}

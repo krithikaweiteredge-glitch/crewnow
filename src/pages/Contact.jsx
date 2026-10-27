@@ -18,7 +18,7 @@ export default function Contact() {
       <section className="section">
         <div className="container form-layout">
           <Reveal className="form-card">
-            <h2 style={{ fontSize: '1.8rem' }}>Get in touch</h2>
+            <h2 style={{ fontSize: '2.6rem' }}>Get in touch</h2>
             <p className="lead" style={{ marginBottom: 32 }}>
               The fastest way to get a price is our booking form – it takes about two minutes and goes straight to our team.
             </p>
@@ -35,7 +35,7 @@ export default function Contact() {
           <Reveal className="side" delay={0.1}>
             <div className="side-card">
               <h3>Need a quote?</h3>
-              <p style={{ color: '#b9cbe0' }}>Tell us the service, site and date. We’ll come back within one business day with a fixed price.</p>
+              <p style={{ color: '#c3cee8' }}>Tell us the service, site and date. We’ll come back within one business day with a fixed price.</p>
               <Link to="/book" className="btn btn-primary">Book a service <ArrowRight size={17} /></Link>
             </div>
           </Reveal>
