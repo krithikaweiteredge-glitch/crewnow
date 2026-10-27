@@ -8,19 +8,24 @@ export function Glint() {
 }
 
 // Thin orange bar at the top that fills as the page is scrolled.
+// Updated straight on the DOM node (one rAF per frame) so scrolling never triggers a React render.
 export function ScrollProgress() {
-  const [p, setP] = useState(0);
+  const bar = useRef(null);
   useEffect(() => {
-    const on = () => {
+    let raf = 0;
+    const paint = () => {
+      raf = 0;
       const h = document.documentElement.scrollHeight - window.innerHeight;
-      setP(h > 0 ? Math.min(1, window.scrollY / h) : 0);
+      const p = h > 0 ? Math.min(1, window.scrollY / h) : 0;
+      if (bar.current) bar.current.style.transform = `scaleX(${p})`;
     };
-    on();
+    const on = () => { if (!raf) raf = requestAnimationFrame(paint); };
+    paint();
     window.addEventListener('scroll', on, { passive: true });
     window.addEventListener('resize', on);
-    return () => { window.removeEventListener('scroll', on); window.removeEventListener('resize', on); };
+    return () => { cancelAnimationFrame(raf); window.removeEventListener('scroll', on); window.removeEventListener('resize', on); };
   }, []);
-  return <div className="progress" aria-hidden="true"><i style={{ transform: `scaleX(${p})` }} /></div>;
+  return <div className="progress" aria-hidden="true"><i ref={bar} /></div>;
 }
 
 // "500+", "12k+", "4.9★", "24h" -> animates the number, keeps the suffix.
