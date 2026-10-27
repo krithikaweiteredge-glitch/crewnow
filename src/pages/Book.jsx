@@ -99,7 +99,7 @@ export default function Book() {
 
   return (
     <>
-      <PageHero eyebrow="Book a service" title="Tell us what you need." text="Takes about two minutes. We’ll reply within one business day with a fixed quote – no obligation." />
+      <PageHero eyebrow="Book a service" title="Tell us what you need." text="It takes about two minutes. You’ll receive a fixed quote within one business day, with no obligation." />
       <section className="section" style={{ paddingTop: 56 }}>
         <div className="container form-layout">
           <form className="form-card" onSubmit={submit} noValidate>

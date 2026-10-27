@@ -18,7 +18,7 @@ export function PageHero({ eyebrow, title, text, image = photos.office, crumb })
   );
 }
 
-export function CtaBand({ title = 'Ready for a workplace that’s always spotless?', text = 'Tell us what you need. We’ll reply with a clear, fixed quote within one business day.' }) {
+export function CtaBand({ title = <>Let’s make your workplace <span className="hl">effortlessly spotless.</span></>, text = 'Tell us what you need and we’ll send a fixed quote within one business day. No obligation.' }) {
   return (
     <section className="section">
       <div className="container">

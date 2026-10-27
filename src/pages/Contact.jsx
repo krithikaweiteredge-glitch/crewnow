@@ -14,13 +14,13 @@ export default function Contact() {
 
   return (
     <>
-      <PageHero eyebrow="Contact" title="Let’s talk about your space." text="Questions, custom requirements or an urgent job? We’re a call or email away." />
+      <PageHero eyebrow="Contact" title="Let’s talk about your space." text="Questions, special requirements or an urgent job? Call, email or send a booking request and we’ll respond quickly." />
       <section className="section">
         <div className="container form-layout">
           <Reveal className="form-card">
             <h2 style={{ fontSize: '2.6rem' }}>Get in touch</h2>
             <p className="lead" style={{ marginBottom: 32 }}>
-              The fastest way to get a price is our booking form – it takes about two minutes and goes straight to our team.
+              The quickest way to get a price is our booking form. It takes about two minutes and goes straight to our team.
             </p>
             {rows.map(([Ico, label, value, href]) => (
               <div className="cl" key={label}>
@@ -35,7 +35,7 @@ export default function Contact() {
           <Reveal className="side" delay={0.1}>
             <div className="side-card">
               <h3>Need a quote?</h3>
-              <p style={{ color: '#c3cee8' }}>Tell us the service, site and date. We’ll come back within one business day with a fixed price.</p>
+              <p style={{ color: '#c3cee8' }}>Tell us the service, the site and the date. We’ll reply within one business day with a fixed price.</p>
               <Link to="/book" className="btn btn-primary">Book a service <ArrowRight size={17} /></Link>
             </div>
           </Reveal>

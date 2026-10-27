@@ -10,8 +10,8 @@ export default function Services() {
     <>
       <PageHero
         eyebrow="Our services"
-        title="Cleaning, maintenance and crews — handled."
-        text="Choose a single service or bundle several into one visit, one quote and one invoice."
+        title="Every service your building needs. Handled."
+        text="Choose one service or combine several into a single visit, with one quote and one invoice."
         image={34517611}
         crumb="Services"
       />

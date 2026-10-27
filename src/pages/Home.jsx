@@ -29,7 +29,7 @@ function QuoteBar() {
       <div className="container">
         <Reveal as="form" className="quote-bar" onSubmit={go}>
           <div className="qb-head">
-            <h3>Get your free quote in 2 minutes</h3>
+            <h3>Your free quote, in two minutes</h3>
             <span><Check size={17} strokeWidth={3} /> No payment. No obligation.</span>
           </div>
           <div className="field">
@@ -55,12 +55,12 @@ function QuoteBar() {
 
 const plans = [
   {
-    name: 'One-time Deep Clean', for: 'Move-ins, post-renovation, audits and seasonal resets.',
+    name: 'One-time Deep Clean', for: 'For move-ins, post-renovation, audits and seasonal resets.',
     items: ['Top-to-bottom deep clean', 'Floors machine-scrubbed', 'Kitchens & washrooms sanitised', 'Out-of-hours scheduling', 'Re-clean guarantee'],
     id: 'deep-cleaning', cta: 'Get a quote',
   },
   {
-    name: 'Recurring Facility Care', for: 'Offices that want a spotless workplace every single day.', pop: true,
+    name: 'Recurring Facility Care', for: 'For workplaces that want to look spotless every single day.', pop: true,
     items: ['Dedicated uniformed crew', 'Daily, weekly or custom schedule', 'Consumables restocked', 'Quality audits & checklists', 'One contact, one monthly invoice', 'Absence cover included'],
     id: 'daily-janitorial', cta: 'Book recurring care',
   },
@@ -83,12 +83,12 @@ export default function Home() {
             <h1>
               Spotless workplaces,{' '}
               <span className="hl">
-                booked in minutes.
+                zero effort.
                 <svg viewBox="0 0 300 14" preserveAspectRatio="none" aria-hidden="true"><path d="M2 9C60 2 140 2 298 8" stroke="#ffd84a" strokeWidth="5" strokeLinecap="round" fill="none" opacity=".55" /></svg>
               </span>
             </h1>
             <p className="lead">
-              Commercial deep cleaning, window care, facility maintenance and trained staff for offices, clinics and campuses. One agency. One invoice. Zero chasing.
+              Expert cleaning, window care, maintenance and trained crews for offices, clinics and campuses. One trusted partner, one simple invoice, and nothing left for you to chase.
             </p>
             <div className="hero-cta">
               <Link to="/book" className="btn btn-primary btn-lg">Book a service <ArrowRight size={18} /></Link>
@@ -121,10 +121,10 @@ export default function Home() {
       <section className="trust">
         <div className="container trust-grid">
           {[
-            [ShieldCheck, 'Fully insured', 'Public liability & workers’ comp'],
-            [BadgeCheck, 'Vetted & trained', 'Background-checked professionals'],
-            [ThumbsUp, 'Re-clean guarantee', 'Not happy? We’ll make it right'],
-            [Clock, 'Out-of-hours service', 'Evenings, nights & weekends'],
+            [ShieldCheck, 'Fully insured', 'Public liability and workers’ compensation'],
+            [BadgeCheck, 'Vetted and trained', 'Every professional background-checked'],
+            [ThumbsUp, 'Re-clean guarantee', 'If it’s not right, we’ll fix it free'],
+            [Clock, 'Out-of-hours service', 'Evenings, nights and weekends'],
           ].map(([Ico, t, s], i) => (
             <Reveal key={t} delay={i * 0.07} className="trust-item">
               <div className="ic"><Ico size={26} /></div>
@@ -138,9 +138,9 @@ export default function Home() {
       <section className="section">
         <div className="container">
           <Reveal className="section-head center">
-            <span className="eyebrow">Our services</span>
-            <h2>Everything your building needs, <span className="hl">under one roof.</span></h2>
-            <p className="lead">From daily janitorial to high-rise glass and on-demand crews – one trusted team for your whole facility.</p>
+            <span className="eyebrow">What we do</span>
+            <h2>One team for every corner of <span className="hl">your building.</span></h2>
+            <p className="lead">From daily cleaning and high-rise glass to repairs and on-demand crews, you get one trusted partner and one simple invoice.</p>
           </Reveal>
           <div className="svc-grid">
             {services.map((s, i) => {
@@ -174,8 +174,8 @@ export default function Home() {
         <div className="container">
           <Reveal className="section-head center">
             <span className="eyebrow">Instant estimate</span>
-            <h2>What will it cost? <span className="hl">See in seconds.</span></h2>
-            <p className="lead">Pick a service, slide to your site size and get a live price range – then book it in one click.</p>
+            <h2>Know your price <span className="hl">before you book.</span></h2>
+            <p className="lead">Choose a service, set your site size and watch the estimate update live. When it looks right, book it in one click.</p>
           </Reveal>
           <Reveal><Estimator /></Reveal>
         </div>
@@ -192,15 +192,15 @@ export default function Home() {
           <div>
             <Reveal>
               <span className="eyebrow">Why CrewNow</span>
-              <h2>The standard your business <span className="hl">deserves.</span></h2>
-              <p className="lead">We built CrewNow for facility managers tired of chasing contractors. Here’s what changes when you switch.</p>
+              <h2>Made for people who <span className="hl">can’t afford a miss.</span></h2>
+              <p className="lead">Facility managers choose CrewNow because we turn up on time, do the job properly and make it easy. Here’s what that looks like.</p>
             </Reveal>
             <div className="feat-list">
               {[
-                [Zap, 'Fast, fixed-price quotes', 'Book in minutes and hear back within one business day – no surprise charges.'],
-                [Users, 'Trained, uniformed crews', 'Supervised teams, quality checklists and one dedicated point of contact.'],
-                [CalendarCheck, 'Works around your schedule', 'Evenings, nights and weekends so your team is never disturbed.'],
-                [Award, 'Guaranteed results', 'If it’s not right, tell us within 24 hours and we’ll re-clean at no cost.'],
+                [Zap, 'Fixed, upfront quotes', 'No hidden charges. You receive a clear, itemised price within one business day.'],
+                [Users, 'Trained, uniformed crews', 'Supervised teams working to written checklists, with one person always on call for you.'],
+                [CalendarCheck, 'Works around your day', 'We clean and service after hours and at weekends, so your team never loses a minute.'],
+                [Award, 'Guaranteed results', 'Not perfect? Tell us within 24 hours and we’ll come back and put it right, free of charge.'],
               ].map(([Ico, t, p], i) => (
                 <Reveal key={t} className="feat" delay={i * 0.08}>
                   <div className="ic"><Ico size={25} /></div>
@@ -217,8 +217,8 @@ export default function Home() {
         <div className="container">
           <Reveal className="section-head center">
             <span className="eyebrow">Who we serve</span>
-            <h2>Built for every kind of <span className="hl">workplace.</span></h2>
-            <p className="lead">Different spaces, different standards. We tailor every crew, checklist and schedule to your industry.</p>
+            <h2>Tailored to <span className="hl">your kind of space.</span></h2>
+            <p className="lead">Every industry has its own standards. We shape our crews, checklists and schedules around yours.</p>
           </Reveal>
           <div className="ind-grid">
             {industries.map((it, i) => (
@@ -249,7 +249,7 @@ export default function Home() {
         <div className="container">
           <Reveal className="section-head center">
             <span className="eyebrow">How it works</span>
-            <h2>Three simple steps to <span className="hl">a spotless site.</span></h2>
+            <h2>From enquiry to <span className="hl">done, in three steps.</span></h2>
           </Reveal>
           <div className="process">
             {steps.map((s, i) => (
@@ -268,8 +268,8 @@ export default function Home() {
         <div className="container">
           <Reveal className="section-head center">
             <span className="eyebrow">Ways to work with us</span>
-            <h2>A plan for every <span className="hl">kind of site.</span></h2>
-            <p className="lead">Every quote is fixed and itemised – you’ll know the cost before we start.</p>
+            <h2>Choose how you’d <span className="hl">like to work.</span></h2>
+            <p className="lead">Every quote is fixed and itemised, so you know the cost before we begin.</p>
           </Reveal>
           <div className="plans">
             {plans.map((p, i) => (
@@ -290,7 +290,7 @@ export default function Home() {
         <div className="container">
           <Reveal className="section-head center">
             <span className="eyebrow">Client stories</span>
-            <h2>Trusted by <span className="hl">facility teams.</span></h2>
+            <h2>What our <span className="hl">clients say.</span></h2>
           </Reveal>
           <Testimonials />
         </div>
@@ -301,7 +301,7 @@ export default function Home() {
         <div className="container">
           <Reveal className="section-head center">
             <span className="eyebrow">FAQ</span>
-            <h2>Quick answers.</h2>
+            <h2>Your questions, <span className="hl">answered.</span></h2>
           </Reveal>
           <Faq limit={4} />
         </div>

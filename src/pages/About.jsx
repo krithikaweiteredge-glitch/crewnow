@@ -6,9 +6,9 @@ import { CountUp } from '../components/Effects.jsx';
 import { px, photos, serviceImages } from '../images.js';
 
 const values = [
-  [Target, 'Obsessed with detail', 'We work from written checklists and audit every site, because the small things are what people notice.'],
-  [Handshake, 'Reliable by default', 'We show up when we say we will. If something goes wrong, we fix it fast and we own it.'],
-  [Heart, 'People first', 'Our crews are trained, fairly paid and proud of their work – and it shows in the results.'],
+  [Target, 'Obsessed with detail', 'Every job follows a written checklist and every site is audited, because the small things are what people notice.'],
+  [Handshake, 'Reliable by default', 'We arrive when we say we will. If something goes wrong, we put it right quickly and take ownership.'],
+  [Heart, 'People first', 'Our crews are trained, fairly paid and proud of their work, and it shows in the results.'],
 ];
 
 export default function About() {
@@ -16,8 +16,8 @@ export default function About() {
     <>
       <PageHero
         eyebrow="About us"
-        title="The crew behind your clean, safe workplace."
-        text="CrewNow is a facility-services agency that keeps businesses spotless, maintained and fully staffed."
+        title="The people behind spotless workplaces."
+        text="CrewNow is a facility-services agency that keeps businesses clean, well maintained and properly staffed."
         image={photos.team}
         crumb="About"
       />
@@ -31,12 +31,12 @@ export default function About() {
           </Reveal>
           <Reveal delay={0.1}>
             <span className="eyebrow">Our story</span>
-            <h2>Built because contractors kept <span className="hl">letting people down.</span></h2>
+            <h2>Built because good service <span className="hl">shouldn’t be rare.</span></h2>
             <p className="lead">
-              We started CrewNow after watching facility managers juggle five different vendors for cleaning, repairs and temporary staff – and chase every one of them.
+              CrewNow began when we saw facility managers juggling five different vendors for cleaning, repairs and temporary staff, and spending their days chasing every one of them.
             </p>
             <p style={{ color: 'var(--muted)' }}>
-              So we built one agency that does it all, with trained crews, clear communication and fixed pricing. Today we look after hundreds of offices, clinics, stores and campuses – and we still answer our own phones.
+              So we built one agency that does it all, with trained crews, honest communication and fixed pricing. Today we look after hundreds of offices, clinics, stores and campuses, and we still answer our own phones.
             </p>
           </Reveal>
         </div>
