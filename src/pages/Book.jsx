@@ -182,7 +182,7 @@ export default function Book() {
               <ul className="promise">
                 <li><Check size={18} strokeWidth={3} /> Your request lands straight in our inbox.</li>
                 <li><Clock size={18} /> We reply within one business day with a fixed quote.</li>
-                <li><ShieldCheck size={18} /> Insured, vetted crews. Re-clean guarantee.</li>
+                <li><ShieldCheck size={18} /> Fully insured, background-checked crews.</li>
               </ul>
             </div>
             <div className="side-card light">

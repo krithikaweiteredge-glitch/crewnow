@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import {
-  ArrowRight, BadgeCheck, Clock, ShieldCheck, Leaf, Users, Zap, Star, Check, Award, ThumbsUp, Building2, CalendarCheck,
+  ArrowRight, BadgeCheck, Clock, ShieldCheck, Leaf, Users, Zap, Star, Check, Award, Building2, CalendarCheck,
 } from 'lucide-react';
 import Reveal from '../components/Reveal.jsx';
 import { Testimonials, Faq, CtaBand } from '../components/Sections.jsx';
@@ -56,7 +56,7 @@ function QuoteBar() {
 const plans = [
   {
     name: 'One-time Deep Clean', for: 'For move-ins, post-renovation, audits and seasonal resets.',
-    items: ['Top-to-bottom deep clean', 'Floors machine-scrubbed', 'Kitchens & washrooms sanitised', 'Out-of-hours scheduling', 'Re-clean guarantee'],
+    items: ['Top-to-bottom deep clean', 'Floors machine-scrubbed', 'Kitchens & washrooms sanitised', 'Out-of-hours scheduling'],
     id: 'deep-cleaning', cta: 'Get a quote',
   },
   {
@@ -123,7 +123,6 @@ export default function Home() {
           {[
             [ShieldCheck, 'Fully insured', 'Public liability and workers’ compensation'],
             [BadgeCheck, 'Vetted and trained', 'Every professional background-checked'],
-            [ThumbsUp, 'Re-clean guarantee', 'If it’s not right, we’ll fix it free'],
             [Clock, 'Out-of-hours service', 'Evenings, nights and weekends'],
           ].map(([Ico, t, s], i) => (
             <Reveal key={t} delay={i * 0.07} className="trust-item">
@@ -200,7 +199,7 @@ export default function Home() {
                 [Zap, 'Fixed, upfront quotes', 'No hidden charges. You receive a clear, itemised price within one business day.'],
                 [Users, 'Trained, uniformed crews', 'Supervised teams working to written checklists, with one person always on call for you.'],
                 [CalendarCheck, 'Works around your day', 'We clean and service after hours and at weekends, so your team never loses a minute.'],
-                [Award, 'Guaranteed results', 'Not perfect? Tell us within 24 hours and we’ll come back and put it right, free of charge.'],
+                [Award, 'Quality you can see', 'Every site is checked against a written checklist and audited regularly, so standards never slip.'],
               ].map(([Ico, t, p], i) => (
                 <Reveal key={t} className="feat" delay={i * 0.08}>
                   <div className="ic"><Ico size={25} /></div>

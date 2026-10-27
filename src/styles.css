@@ -129,7 +129,7 @@ p { margin: 0 0 1em; }
 
 /* Trust strip */
 .trust { padding: 56px 0 0; }
-.trust-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.trust-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 .trust-item { display: flex; align-items: center; gap: 16px; padding: 8px 4px; }
 .trust-item .ic { width: 56px; height: 56px; border-radius: 16px; background: var(--sand); color: var(--navy-3); display: grid; place-items: center; flex: none; }
 .trust-item b { display: block; color: var(--ink); font-weight: 800; line-height: 1.25; }

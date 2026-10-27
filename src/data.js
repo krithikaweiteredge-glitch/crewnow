@@ -60,7 +60,7 @@ export const faqs = [
   { q: 'Do you work outside business hours?', a: 'Yes. Most of our commercial work happens in the evenings, overnight and at weekends, so your team is never disturbed.' },
   { q: 'Are your crews insured and vetted?', a: 'Every team member is background-checked, trained and covered by public liability and workers’ compensation insurance.' },
   { q: 'How does pricing work?', a: 'Pricing depends on the size of your site, the scope of work and how often you need us. Send a booking request and we’ll reply with a fixed quote, with no surprises and no obligation.' },
-  { q: 'What if I’m not happy with the result?', a: 'Tell us within 24 hours and we’ll send a crew back to put it right at no extra cost.' },
+  { q: 'What if I’m not happy with the result?', a: 'Tell us within 24 hours and we’ll review the work with you and agree the best way to put it right.' },
   { q: 'Can I book more than one service?', a: 'Of course. Select as many as you like on the booking form and we’ll combine them into a single visit with one quote.' },
 ];
 
