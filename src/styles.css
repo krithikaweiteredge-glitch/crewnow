@@ -62,7 +62,8 @@ p { margin: 0 0 1em; }
 
 /* Top bar + header */
 .topbar { background: var(--navy); color: #c3d4ea; font-size: .86rem; font-weight: 500; }
-.topbar .container { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 10px 0; }
+.topbar .container, .header .container { width: auto; max-width: none; margin-inline: 0; padding-inline: clamp(20px, 3.5vw, 56px); }
+.topbar .container { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding-block: 10px; }
 .topbar a, .topbar span { display: inline-flex; align-items: center; gap: 8px; }
 .topbar a:hover { color: #fff; }
 .topbar .left { display: flex; gap: 26px; flex-wrap: wrap; }
