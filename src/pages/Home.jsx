@@ -5,10 +5,11 @@ import {
 } from 'lucide-react';
 import Reveal from '../components/Reveal.jsx';
 import { Testimonials, Faq, CtaBand } from '../components/Sections.jsx';
-import { services, steps, stats } from '../data.js';
+import { services, stats } from '../data.js';
 import { px, photos, serviceImages, industries } from '../images.js';
 import { Glint, CountUp, Ticker } from '../components/Effects.jsx';
 import Estimator from '../components/Estimator.jsx';
+import { StoryScroll, Statement, Tilt, HeroFx } from '../components/Cinema.jsx';
 
 function QuoteBar() {
   const nav = useNavigate();
@@ -71,12 +72,21 @@ const plans = [
   },
 ];
 
+const scenes = [
+  { photo: 6794970, title: 'You tell us what you need.', text: 'Pick a service, set the size of your site and book in two minutes. A fixed quote follows within one business day.' },
+  { photo: 6196677, title: 'The crew arrives on time.', text: 'Uniformed, background-checked and briefed on your site before they walk through the door.' },
+  { photo: 34516670, title: 'Every corner gets done.', text: 'Floors, desks, washrooms and pantries, all worked through a written checklist.' },
+  { photo: 4767875, title: 'Glass, done properly.', text: 'Rope-access and cradle teams for high-rise glass, inside and out, without disturbing the people behind it.' },
+  { photo: 7750129, title: 'You get your day back.', text: 'A job report with photos lands in your inbox, and your team walks into a space that is ready for work.' },
+];
+
 export default function Home() {
   return (
     <>
       {/* HERO */}
       <section className="hero">
         <Glint />
+        <HeroFx />
         <div className="container hero-grid">
           <div>
             <span className="pill-live"><span className="dot" /> Crews available this week</span>
@@ -133,6 +143,14 @@ export default function Home() {
         </div>
       </section>
 
+      {/* STATEMENT */}
+      <section className="statement">
+        <div className="container">
+          <span className="eyebrow">About CrewNow</span>
+          <Statement text="We clean, repair and staff the buildings people work in, so the people inside can get on with their day." accent={['people', 'day']} />
+        </div>
+      </section>
+
       {/* SERVICES */}
       <section className="section">
         <div className="container">
@@ -141,7 +159,7 @@ export default function Home() {
             <h2>One team for every corner of <span className="hl">your building.</span></h2>
             <p className="lead">From daily cleaning and high-rise glass to repairs and on-demand crews, you get one trusted partner and one simple invoice.</p>
           </Reveal>
-          <div className="svc-grid">
+          <Tilt className="svc-grid">
             {services.map((s, i) => {
               const Ico = s.icon;
               return (
@@ -159,7 +177,7 @@ export default function Home() {
                 </Reveal>
               );
             })}
-          </div>
+          </Tilt>
           <div className="center" style={{ marginTop: 48 }}>
             <Link to="/services" className="btn btn-navy btn-lg">See all service details <ArrowRight size={18} /></Link>
           </div>
@@ -211,6 +229,11 @@ export default function Home() {
         </div>
       </section>
 
+      {/* STORY */}
+      <section className="story-section" aria-label="How a job goes">
+        <StoryScroll scenes={scenes} />
+      </section>
+
       {/* INDUSTRIES */}
       <section className="section">
         <div className="container">
@@ -219,7 +242,7 @@ export default function Home() {
             <h2>Tailored to <span className="hl">your kind of space.</span></h2>
             <p className="lead">Every industry has its own standards. We shape our crews, checklists and schedules around yours.</p>
           </Reveal>
-          <div className="ind-grid">
+          <Tilt className="ind-grid" max={5}>
             {industries.map((it, i) => (
               <Reveal key={it.name} delay={(i % 3) * 0.08} as={Link} to="/book" className="ind">
                 <img src={px(it.photo, 800)} alt={it.name} loading="lazy" />
@@ -230,7 +253,7 @@ export default function Home() {
                 </div>
               </Reveal>
             ))}
-          </div>
+          </Tilt>
         </div>
       </section>
 
@@ -240,25 +263,6 @@ export default function Home() {
           {stats.map((s) => (
             <Reveal key={s.label}><strong><CountUp value={s.value} /></strong><span>{s.label}</span></Reveal>
           ))}
-        </div>
-      </section>
-
-      {/* PROCESS */}
-      <section className="section">
-        <div className="container">
-          <Reveal className="section-head center">
-            <span className="eyebrow">How it works</span>
-            <h2>From enquiry to <span className="hl">done, in three steps.</span></h2>
-          </Reveal>
-          <div className="process">
-            {steps.map((s, i) => (
-              <Reveal key={s.title} className="pstep" delay={i * 0.12}>
-                <div className="num">{i + 1}</div>
-                <h3>{s.title}</h3>
-                <p>{s.text}</p>
-              </Reveal>
-            ))}
-          </div>
         </div>
       </section>
 
