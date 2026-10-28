@@ -3,6 +3,7 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/Header.jsx';
 import Footer from './components/Footer.jsx';
 import { ScrollProgress } from './components/Effects.jsx';
+import { SmoothScroll, HeadingReveals, scrollTop } from './components/Motion.jsx';
 import Home from './pages/Home.jsx';
 import Services from './pages/Services.jsx';
 import About from './pages/About.jsx';
@@ -23,12 +24,13 @@ export default function App() {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    scrollTop();
     document.title = TITLES[pathname] || TITLES['/'];
   }, [pathname]);
 
   return (
     <>
+      <SmoothScroll />
       <ScrollProgress />
       <Header />
       <main>
@@ -43,6 +45,7 @@ export default function App() {
         </Routes>
       </main>
       <Footer />
+      <HeadingReveals routeKey={pathname} />
     </>
   );
 }

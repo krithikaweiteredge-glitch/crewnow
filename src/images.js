@@ -1,7 +1,11 @@
-// Free-to-use stock photos from Pexels (https://www.pexels.com/license/).
-// Swap these for the agency's own crew/site photos when available.
-export const px = (id, w = 900) =>
-  `https://images.pexels.com/photos/${id}/pexels-photo-${id}.jpeg?auto=compress&cs=tinysrgb&w=${w}`;
+// Free-to-use stock photos from Pexels (https://www.pexels.com/license/), hosted with the site
+// as WebP in four widths (public/images/<id>-<width>.webp).
+// To use the agency's own photos, add them to public/images with the same naming and change the ids below.
+const WIDTHS = [640, 960, 1280, 1600];
+export const px = (id, w = 900) => {
+  const size = WIDTHS.find((x) => x >= w) || WIDTHS[WIDTHS.length - 1];
+  return `/images/${id}-${size}.webp`;
+};
 
 export const photos = {
   hero: 6196677,
