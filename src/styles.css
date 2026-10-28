@@ -89,7 +89,7 @@ p { margin: 0 0 1em; }
 
 /* Hero */
 .hero { position: relative; background: var(--navy); color: #fff; overflow: hidden; isolation: isolate; padding: 88px 0 190px; }
-.hero::before { content: ""; position: absolute; inset: 0; z-index: -1;
+.hero::before { content: ""; position: absolute; inset: -60px; z-index: -1; /* oversized so the mouse parallax never exposes its edge */
   background: radial-gradient(ellipse 60% 70% at 85% 30%, rgba(36,63,117,.9), transparent 70%), radial-gradient(ellipse 40% 50% at 0% 100%, rgba(255,216,74,.2), transparent 70%); }
 .hero::after { content: ""; position: absolute; inset: 0; z-index: -1; opacity: .5;
   background-image: radial-gradient(rgba(255,255,255,.07) 1.2px, transparent 1.2px); background-size: 28px 28px; }
@@ -507,7 +507,7 @@ legend .n { width: 36px; height: 36px; border-radius: 11px; background: var(--su
 .hero-media { transform: translate3d(0, calc(var(--hp, 0) * 38px), 0); }
 .hero-grid > div:first-child { transform: translate3d(0, calc(var(--hp, 0) * -22px), 0); }
 .hero-media .photo { translate: calc(var(--px, 0) * -9px) calc(var(--py, 0) * -7px); scale: calc(1 + var(--hp, 0) * .07); }
-.hero-media::before { translate: calc(var(--px, 0) * 14px) calc(var(--py, 0) * 10px); }
+.hero-media::before { translate: calc(var(--px, 0) * -9px) calc(var(--py, 0) * -7px); scale: calc(1 + var(--hp, 0) * .07); } /* moves exactly with the photo so no edge pokes out */
 .float.f1 { translate: calc(var(--px, 0) * 22px) calc(var(--py, 0) * 14px); }
 .float.f2 { translate: calc(var(--px, 0) * 32px) calc(var(--py, 0) * 20px); }
 .hero::before { translate: calc(var(--px, 0) * -26px) calc(var(--py, 0) * -18px); }
