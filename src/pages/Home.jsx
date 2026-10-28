@@ -112,7 +112,7 @@ export default function Home() {
           </div>
 
           <div className="hero-media">
-            <img className="photo" src={px(photos.hero, 1100)} alt="CrewNow cleaning crew in uniform arriving on site" />
+            <img className="photo" src={px(photos.hero, 1100)} alt="CrewNow cleaning crew in uniform arriving on site" fetchpriority="high" decoding="async" />
             <div className="float f1">
               <div className="ic"><Star size={22} fill="currentColor" strokeWidth={0} /></div>
               <div><b>4.9 / 5</b><small>from 300+ client reviews</small></div>
