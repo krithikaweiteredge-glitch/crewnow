@@ -13,13 +13,11 @@ const links = [
 export function Logo() {
   return (
     <Link to="/" className="logo" aria-label={`${config.brand} home`}>
-      <span className="logo-mark" aria-hidden="true">
-        <svg viewBox="0 0 40 40" width="32" height="32" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M28.5 11.2A12.5 12.5 0 1 0 28.5 28.8" />
-          <path d="M16.2 20.6l4.4 4.4 8.4-9.6" />
-        </svg>
+      <img className="logo-img" src="/brand/foursync-mark.webp" alt="" width="46" height="49" decoding="async" />
+      <span className="wm">
+        <b><span className="w1">FOUR</span><span className="w2">SYNC</span></b>
+        <small>Services</small>
       </span>
-      {config.brand}
     </Link>
   );
 }

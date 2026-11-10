@@ -94,7 +94,7 @@ export default function Home() {
               Spotless workplaces,{' '}
               <span className="hl">
                 zero effort.
-                <svg viewBox="0 0 300 14" preserveAspectRatio="none" aria-hidden="true"><path d="M2 9C60 2 140 2 298 8" stroke="#ffd84a" strokeWidth="5" strokeLinecap="round" fill="none" opacity=".55" /></svg>
+                <svg viewBox="0 0 300 14" preserveAspectRatio="none" aria-hidden="true"><path d="M2 9C60 2 140 2 298 8" stroke="#fcc529" strokeWidth="5" strokeLinecap="round" fill="none" opacity=".55" /></svg>
               </span>
             </h1>
             <p className="lead">
@@ -112,14 +112,14 @@ export default function Home() {
           </div>
 
           <div className="hero-media">
-            <img className="photo" src={px(photos.hero, 1100)} alt="CrewNow cleaning crew in uniform arriving on site" fetchpriority="high" decoding="async" />
+            <img className="photo" src={px(photos.hero, 1100)} alt="FourSync cleaning crew in uniform arriving on site" fetchpriority="high" decoding="async" />
             <div className="float f1">
               <div className="ic"><Star size={22} fill="currentColor" strokeWidth={0} /></div>
               <div><b>4.9 / 5</b><small>from 300+ client reviews</small></div>
             </div>
             <div className="float f2">
               <div className="ic"><Building2 size={22} /></div>
-              <div><b>500+ businesses</b><small>trust CrewNow</small></div>
+              <div><b>500+ businesses</b><small>trust FourSync</small></div>
             </div>
           </div>
         </div>
@@ -146,7 +146,7 @@ export default function Home() {
       {/* STATEMENT */}
       <section className="statement">
         <div className="container">
-          <span className="eyebrow">About CrewNow</span>
+          <span className="eyebrow">About FourSync</span>
           <Statement text="We clean, repair and staff the buildings people work in, so the people inside can get on with their day." accent={['people', 'day']} />
         </div>
       </section>
@@ -202,15 +202,15 @@ export default function Home() {
       <section className="section ice">
         <div className="container split">
           <Reveal className="photo-stack">
-            <img className="main" src={px(photos.team, 1000)} alt="Uniformed CrewNow team with cleaning equipment" loading="lazy" />
+            <img className="main" src={px(photos.team, 1000)} alt="Uniformed FourSync team with cleaning equipment" loading="lazy" />
             <img className="sub" src={px(serviceImages['window-cleaning'], 600)} alt="Rope-access crew cleaning a glass facade" loading="lazy" />
             <div className="exp"><strong>10+</strong><span>Years of trusted service</span></div>
           </Reveal>
           <div>
             <Reveal>
-              <span className="eyebrow">Why CrewNow</span>
+              <span className="eyebrow">Why FourSync</span>
               <h2>Made for people who <span className="hl">can’t afford a miss.</span></h2>
-              <p className="lead">Facility managers choose CrewNow because we turn up on time, do the job properly and make it easy. Here’s what that looks like.</p>
+              <p className="lead">Facility managers choose FourSync because we turn up on time, do the job properly and make it easy. Here’s what that looks like.</p>
             </Reveal>
             <div className="feat-list">
               {[

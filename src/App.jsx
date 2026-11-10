@@ -12,12 +12,12 @@ import Book from './pages/Book.jsx';
 import ThankYou from './pages/ThankYou.jsx';
 
 const TITLES = {
-  '/': 'CrewNow – Office Cleaning, Maintenance & Staffing',
-  '/services': 'Services – CrewNow',
-  '/about': 'About – CrewNow',
-  '/contact': 'Contact – CrewNow',
-  '/book': 'Book a Service – CrewNow',
-  '/thanks': 'Request received – CrewNow',
+  '/': 'FourSync Services – Office Cleaning, Maintenance & Staffing',
+  '/services': 'Services – FourSync Services',
+  '/about': 'About – FourSync Services',
+  '/contact': 'Contact – FourSync Services',
+  '/book': 'Book a Service – FourSync Services',
+  '/thanks': 'Request received – FourSync Services',
 };
 
 export default function App() {

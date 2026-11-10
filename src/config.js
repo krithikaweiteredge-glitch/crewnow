@@ -5,11 +5,11 @@
 // The first booking triggers an activation email to this address — click the link
 // once and every later booking arrives as a normal email.
 export const config = {
-  brand: 'CrewNow',
+  brand: 'FourSync Services',
   BOOKING_EMAIL: 'bookings@example.com', // <-- REPLACE with the agency's real email
   phone: '+91 xxxxx xxxxx',
   phoneLink: '+91xxxxxxxxxx',
-  email: 'hello@crewnow.example',
+  email: 'hello@foursync.example',
   address: '120 Market Street, Suite 4, Your City',
   hours: 'Mon–Sat, 7:00 am – 8:00 pm',
   // Shown in the top bar. PLACEHOLDER offer — set a real one, or '' to hide it.

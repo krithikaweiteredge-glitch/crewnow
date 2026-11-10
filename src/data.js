@@ -52,7 +52,7 @@ export const steps = [
 export const testimonials = [
   { quote: 'They deep-cleaned three floors over a weekend. Nobody saw them come or go, but on Monday the whole office looked brand new.', name: 'Priya Nair', role: 'Operations Manager, Brightwave Tech' },
   { quote: 'Our glass facade has never looked better. The crew was professional and fully insured, and booking could not have been easier.', name: 'Daniel Ortiz', role: 'Facilities Head, Meridian Offices' },
-  { quote: 'We moved our janitorial to CrewNow and noticed the difference straight away. One point of contact and nothing to chase.', name: 'Sarah Whitfield', role: 'Director, Whitfield & Co. Law' },
+  { quote: 'We moved our janitorial to FourSync and noticed the difference straight away. One point of contact and nothing to chase.', name: 'Sarah Whitfield', role: 'Director, Whitfield & Co. Law' },
 ];
 
 export const faqs = [
