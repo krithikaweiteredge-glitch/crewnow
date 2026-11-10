@@ -35,7 +35,7 @@ export default function Contact() {
           <Reveal className="side" delay={0.1}>
             <div className="side-card">
               <h3>Need a quote?</h3>
-              <p style={{ color: '#c3cee8' }}>Tell us the service, the site and the date. We’ll reply within one business day with a fixed price.</p>
+              <p style={{ color: '#cdd2d9' }}>Tell us the service, the site and the date. We’ll reply within one business day with a fixed price.</p>
               <Link to="/book" className="btn btn-primary">Book a service <ArrowRight size={17} /></Link>
             </div>
           </Reveal>

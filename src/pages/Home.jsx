@@ -94,7 +94,7 @@ export default function Home() {
               Spotless workplaces,{' '}
               <span className="hl">
                 zero effort.
-                <svg viewBox="0 0 300 14" preserveAspectRatio="none" aria-hidden="true"><path d="M2 9C60 2 140 2 298 8" stroke="#fcc529" strokeWidth="5" strokeLinecap="round" fill="none" opacity=".55" /></svg>
+                <svg viewBox="0 0 300 14" preserveAspectRatio="none" aria-hidden="true"><path d="M2 9C60 2 140 2 298 8" stroke="#d4a647" strokeWidth="5" strokeLinecap="round" fill="none" opacity=".55" /></svg>
               </span>
             </h1>
             <p className="lead">
