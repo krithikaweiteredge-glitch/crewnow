@@ -14,10 +14,7 @@ export function Logo() {
   return (
     <Link to="/" className="logo" aria-label={`${config.brand} home`}>
       <img className="logo-img" src="/brand/foursync-mark.webp" alt="" width="46" height="49" decoding="async" />
-      <span className="wm">
-        <b><span className="w1">FOUR</span><span className="w2">SYNC</span></b>
-        <small>Services</small>
-      </span>
+      <img className="logo-word" src="/brand/foursync-wordmark.webp" alt="FourSync Services" width="190" height="37" decoding="async" />
     </Link>
   );
 }
