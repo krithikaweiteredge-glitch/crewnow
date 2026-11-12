@@ -16,8 +16,8 @@ export default function About() {
     <>
       <PageHero
         eyebrow="About us"
-        title="The people behind spotless workplaces."
-        text="FourSync is a facility-services agency that keeps businesses clean, well maintained and properly staffed."
+        title="The people behind every well-kept site."
+        text="FourSync is a facility-services company covering pest management, landscaping, MEP and engineering, valet and events."
         image={photos.team}
         crumb="About"
       />
@@ -25,15 +25,15 @@ export default function About() {
       <section className="section">
         <div className="container split">
           <Reveal className="photo-stack">
-            <img className="main" src={px(photos.hero, 1000)} alt="FourSync crew arriving on site" loading="lazy" />
-            <img className="sub" src={px(serviceImages.maintenance, 600)} alt="Technician servicing an electrical panel" loading="lazy" />
+            <img className="main" src={px(photos.hero, 1000)} alt="FourSync team arriving on site" loading="lazy" />
+            <img className="sub" src={px(serviceImages['mep-engineering'], 600)} alt="Technician servicing an electrical panel" loading="lazy" />
             <div className="exp"><strong>10+</strong><span>Years of trusted service</span></div>
           </Reveal>
           <Reveal delay={0.1}>
             <span className="eyebrow">Our story</span>
             <h2>Built because good service <span className="hl">shouldn’t be rare.</span></h2>
             <p className="lead">
-              FourSync began when we saw facility managers juggling five different vendors for cleaning, repairs and temporary staff, and spending their days chasing every one of them.
+              FourSync began when we saw facility managers juggling a different vendor for pest control, landscaping, repairs, parking and events, and spending their days chasing every one of them.
             </p>
             <p style={{ color: 'var(--muted)' }}>
               So we built one agency that does it all, with trained crews, honest communication and fixed pricing. Today we look after hundreds of offices, clinics, stores and campuses, and we still answer our own phones.

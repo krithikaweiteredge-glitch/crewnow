@@ -12,7 +12,7 @@ export default function Footer() {
           <div>
             <Logo />
             <p style={{ maxWidth: 300 }}>
-              Commercial cleaning, maintenance and staffing for businesses that expect more than “good enough”.
+              Pest management, landscaping, engineering, valet and events for businesses that expect more than “good enough”.
             </p>
             <Link to="/book" className="btn btn-primary btn-sm">Get a free quote</Link>
           </div>

@@ -13,5 +13,5 @@ export const config = {
   address: '120 Market Street, Suite 4, Your City',
   hours: 'Mon–Sat, 7:00 am – 8:00 pm',
   // Shown in the top bar. PLACEHOLDER offer — set a real one, or '' to hide it.
-  offer: 'New clients: 10% off your first deep clean',
+  offer: 'New clients: 10% off your first service',
 };

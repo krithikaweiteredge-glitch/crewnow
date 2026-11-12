@@ -58,7 +58,7 @@ export default function Book() {
       Email: v.email,
       Phone: v.phone,
       'Site address': v.address,
-      'Site size (sq ft)': v.size || '—',
+      'Site or venue size (sq ft)': v.size || '—',
       Frequency: v.frequency,
       'Preferred date': v.date || '—',
       'Preferred time': v.time,
@@ -161,7 +161,7 @@ export default function Book() {
               </div>
               <div className="field">
                 <label className="lbl" htmlFor="notes">Anything else we should know?</label>
-                <textarea id="notes" value={v.notes} onChange={set('notes')} placeholder="Access instructions, floors, special requirements…" />
+                <textarea id="notes" value={v.notes} onChange={set('notes')} placeholder="Access instructions, venue details, special requirements…" />
               </div>
             </fieldset>
 

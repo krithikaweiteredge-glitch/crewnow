@@ -15,21 +15,18 @@ export const photos = {
 };
 
 export const serviceImages = {
-  'deep-cleaning': 34516670,
-  'window-cleaning': 4767875,
-  'daily-janitorial': 6197123,
-  maintenance: 9679179,
-  sanitization: 7876767,
-  'carpet-upholstery': 6195129,
-  'pest-control': 4099467,
-  staffing: 6195121,
+  'pest-management': 32055757,
+  'landscape-gardening': 4920293,
+  'mep-engineering': 9679179,
+  'valet-services': 33353497,
+  'event-management': 16935899,
 };
 
 export const industries = [
-  { name: 'Corporate Offices', photo: 7750129, text: 'Spotless workspaces, out-of-hours.' },
-  { name: 'Healthcare & Clinics', photo: 29948395, text: 'Hospital-grade hygiene, audit-ready.' },
+  { name: 'Corporate Offices', photo: 7750129, text: 'Dependable cover, out-of-hours.' },
+  { name: 'Healthcare & Clinics', photo: 29948395, text: 'Safe, discreet and audit-ready.' },
   { name: 'Hotels & Hospitality', photo: 36354489, text: 'Lobbies and rooms guests remember.' },
-  { name: 'Retail & Malls', photo: 13425897, text: 'Shine that keeps shoppers coming.' },
-  { name: 'Schools & Campuses', photo: 35758721, text: 'Safe, sanitised learning spaces.' },
-  { name: 'Warehouses & Industry', photo: 4481327, text: 'Tidy, safe, compliant floors.' },
+  { name: 'Retail & Malls', photo: 13425897, text: 'Smooth days for shoppers and tenants.' },
+  { name: 'Schools & Campuses', photo: 35758721, text: 'Safe, well-kept campuses.' },
+  { name: 'Warehouses & Industry', photo: 4481327, text: 'Safe, tidy, compliant sites.' },
 ];

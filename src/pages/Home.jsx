@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import {
-  ArrowRight, BadgeCheck, Clock, ShieldCheck, Leaf, Users, Zap, Star, Check, Award, Building2, CalendarCheck,
+  ArrowRight, BadgeCheck, Clock, ShieldCheck, Users, Zap, Star, Check, Award, Building2, CalendarCheck,
 } from 'lucide-react';
 import Reveal from '../components/Reveal.jsx';
 import { Testimonials, Faq, CtaBand } from '../components/Sections.jsx';
@@ -13,7 +13,7 @@ import { StoryScroll, Statement, Tilt, HeroFx } from '../components/Cinema.jsx';
 
 function QuoteBar() {
   const nav = useNavigate();
-  const [service, setService] = useState('deep-cleaning');
+  const [service, setService] = useState('pest-management');
   const [size, setSize] = useState('');
   const [date, setDate] = useState('');
 
@@ -56,28 +56,28 @@ function QuoteBar() {
 
 const plans = [
   {
-    name: 'One-time Deep Clean', for: 'For move-ins, post-renovation, audits and seasonal resets.',
-    items: ['Top-to-bottom deep clean', 'Floors machine-scrubbed', 'Kitchens & washrooms sanitised', 'Out-of-hours scheduling'],
-    id: 'deep-cleaning', cta: 'Get a quote',
+    name: 'One-time service', for: 'For single visits, treatments, installations and one-off events.',
+    items: ['Site visit and assessment', 'Fixed, itemised quote', 'Out-of-hours scheduling', 'Trained, uniformed team', 'Report or handover note'],
+    id: 'pest-management', cta: 'Get a quote',
   },
   {
-    name: 'Recurring Facility Care', for: 'For workplaces that want to look spotless every single day.', pop: true,
-    items: ['Dedicated uniformed crew', 'Daily, weekly or custom schedule', 'Consumables restocked', 'Quality audits & checklists', 'One contact, one monthly invoice', 'Absence cover included'],
-    id: 'daily-janitorial', cta: 'Book recurring care',
+    name: 'Annual contract', for: 'For sites that need regular, dependable cover all year.', pop: true,
+    items: ['Scheduled visits all year', 'Dedicated account manager', 'Priority emergency response', 'A report after every visit', 'One monthly invoice'],
+    id: 'mep-engineering', cta: 'Ask about contracts',
   },
   {
-    name: 'Crew & Maintenance', for: 'Technicians and trained staff, on contract or on demand.',
-    items: ['Licensed technicians', 'Background-checked staff', 'Peak-season & event crews', 'Preventive maintenance plans', 'We handle payroll & compliance'],
-    id: 'staffing', cta: 'Hire a crew',
+    name: 'Dedicated team on site', for: 'For valet desks, event days and large estates.',
+    items: ['Trained, uniformed staff', 'Supervisors on every shift', 'Peak-day and event crews', 'Cover for absences', 'We handle payroll and compliance'],
+    id: 'valet-services', cta: 'Hire a team',
   },
 ];
 
 const scenes = [
   { photo: 6794970, title: 'You tell us what you need.', text: 'Pick a service, set the size of your site and book in two minutes. A fixed quote follows within one business day.' },
-  { photo: 6196677, title: 'The crew arrives on time.', text: 'Uniformed, background-checked and briefed on your site before they walk through the door.' },
-  { photo: 34516670, title: 'Every corner gets done.', text: 'Floors, desks, washrooms and pantries, all worked through a written checklist.' },
-  { photo: 4767875, title: 'Glass, done properly.', text: 'Rope-access and cradle teams for high-rise glass, inside and out, without disturbing the people behind it.' },
-  { photo: 7750129, title: 'You get your day back.', text: 'A job report with photos lands in your inbox, and your team walks into a space that is ready for work.' },
+  { photo: 6196677, title: 'The right team arrives on time.', text: 'Uniformed, background-checked and briefed on your site before they walk through the door.' },
+  { photo: 9679179, title: 'Specialists on every job.', text: 'Skilled technicians, trained handlers and experienced coordinators, each matched to the work in hand.' },
+  { photo: 4920293, title: 'Indoors, outdoors, on the day.', text: 'From gardens and car parks to plant rooms and ballrooms, we adapt to the place and the people in it.' },
+  { photo: 7750129, title: 'You get your day back.', text: 'A report lands in your inbox, and your team walks into a site that is ready for work.' },
 ];
 
 export default function Home() {
@@ -91,14 +91,14 @@ export default function Home() {
           <div>
             <span className="pill-live"><span className="dot" /> Crews available this week</span>
             <h1>
-              Spotless workplaces,{' '}
+              Your property,{' '}
               <span className="hl">
-                zero effort.
+                fully looked after.
                 <svg viewBox="0 0 300 14" preserveAspectRatio="none" aria-hidden="true"><path d="M2 9C60 2 140 2 298 8" stroke="#d4a647" strokeWidth="5" strokeLinecap="round" fill="none" opacity=".55" /></svg>
               </span>
             </h1>
             <p className="lead">
-              Expert cleaning, window care, maintenance and trained crews for offices, clinics and campuses. One trusted partner, one simple invoice, and nothing left for you to chase.
+              Pest management, landscaping, MEP and engineering, valet and event teams, all under one roof. One trusted partner, one simple invoice, and nothing left for you to chase.
             </p>
             <div className="hero-cta">
               <Link to="/book" className="btn btn-primary btn-lg">Book a service <ArrowRight size={18} /></Link>
@@ -107,12 +107,12 @@ export default function Home() {
             <div className="checks-row">
               <span><BadgeCheck size={19} /> Fully insured</span>
               <span><ShieldCheck size={19} /> Background-checked crews</span>
-              <span><Leaf size={19} /> Eco-friendly products</span>
+              <span><Award size={19} /> Licensed specialists</span>
             </div>
           </div>
 
           <div className="hero-media">
-            <img className="photo" src={px(photos.hero, 1100)} alt="FourSync cleaning crew in uniform arriving on site" fetchpriority="high" decoding="async" />
+            <img className="photo" src={px(photos.hero, 1100)} alt="FourSync team in uniform arriving on site" fetchpriority="high" decoding="async" />
             <div className="float f1">
               <div className="ic"><Star size={22} fill="currentColor" strokeWidth={0} /></div>
               <div><b>4.9 / 5</b><small>from 300+ client reviews</small></div>
@@ -147,7 +147,7 @@ export default function Home() {
       <section className="statement">
         <div className="container">
           <span className="eyebrow">About FourSync</span>
-          <Statement text="We clean, repair and staff the buildings people work in, so the people inside can get on with their day." accent={['people', 'day']} />
+          <Statement text="We look after the buildings, grounds and events people depend on, so the people inside can get on with their day." accent={['people', 'day']} />
         </div>
       </section>
 
@@ -156,8 +156,8 @@ export default function Home() {
         <div className="container">
           <Reveal className="section-head center">
             <span className="eyebrow">What we do</span>
-            <h2>One team for every corner of <span className="hl">your building.</span></h2>
-            <p className="lead">From daily cleaning and high-rise glass to repairs and on-demand crews, you get one trusted partner and one simple invoice.</p>
+            <h2>Five services. <span className="hl">One team behind them.</span></h2>
+            <p className="lead">From pest control and landscaping to engineering, valet and events, you get one trusted partner and one simple invoice.</p>
           </Reveal>
           <Tilt className="svc-grid">
             {services.map((s, i) => {
@@ -202,8 +202,8 @@ export default function Home() {
       <section className="section ice">
         <div className="container split">
           <Reveal className="photo-stack">
-            <img className="main" src={px(photos.team, 1000)} alt="Uniformed FourSync team with cleaning equipment" loading="lazy" />
-            <img className="sub" src={px(serviceImages['window-cleaning'], 600)} alt="Rope-access crew cleaning a glass facade" loading="lazy" />
+            <img className="main" src={px(photos.team, 1000)} alt="Uniformed FourSync team on site" loading="lazy" />
+            <img className="sub" src={px(serviceImages['landscape-gardening'], 600)} alt="Groundskeeper trimming conifers" loading="lazy" />
             <div className="exp"><strong>10+</strong><span>Years of trusted service</span></div>
           </Reveal>
           <div>
@@ -216,7 +216,7 @@ export default function Home() {
               {[
                 [Zap, 'Fixed, upfront quotes', 'No hidden charges. You receive a clear, itemised price within one business day.'],
                 [Users, 'Trained, uniformed crews', 'Supervised teams working to written checklists, with one person always on call for you.'],
-                [CalendarCheck, 'Works around your day', 'We clean and service after hours and at weekends, so your team never loses a minute.'],
+                [CalendarCheck, 'Works around your day', 'We schedule work after hours and at weekends, so your team never loses a minute.'],
                 [Award, 'Quality you can see', 'Every site is checked against a written checklist and audited regularly, so standards never slip.'],
               ].map(([Ico, t, p], i) => (
                 <Reveal key={t} className="feat" delay={i * 0.08}>

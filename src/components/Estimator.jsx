@@ -7,7 +7,7 @@ import { frequencies, estimate, inr } from '../pricing.js';
 const PRESETS = [1000, 5000, 15000, 40000];
 
 export default function Estimator() {
-  const [service, setService] = useState('deep-cleaning');
+  const [service, setService] = useState('pest-management');
   const [size, setSize] = useState(5000);
   const [freq, setFreq] = useState('One-time');
 
@@ -33,6 +33,13 @@ export default function Estimator() {
             })}
           </div>
         </div>
+
+        {est.flat && (
+          <div className="est-flat">
+            <b>Priced after a short brief</b>
+            <p>{svc.title} varies from job to job, so we quote it once we know the details. Tell us what you need and we will send a fixed price within one business day.</p>
+          </div>
+        )}
 
         {!est.flat && (
           <>
@@ -86,10 +93,6 @@ export default function Estimator() {
             {est.discount > 0 && <div className="est-save"><Check size={15} strokeWidth={3} /> Includes {Math.round(est.discount * 100)}% recurring-contract saving</div>}
           </div>
         )}
-
-        <ul className="est-incl">
-          {svc.items.slice(0, 4).map((it) => <li key={it}><Check size={16} strokeWidth={3} />{it}</li>)}
-        </ul>
 
         <Link to={`/book?${q}`} className="btn btn-primary btn-lg">Book this job <ArrowRight size={18} /></Link>
         <p className="est-note"><Info size={14} /> Indicative range. You’ll get a fixed, itemised quote within 24 hours – no obligation.</p>

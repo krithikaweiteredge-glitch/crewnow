@@ -12,7 +12,7 @@ import Book from './pages/Book.jsx';
 import ThankYou from './pages/ThankYou.jsx';
 
 const TITLES = {
-  '/': 'FourSync Services – Office Cleaning, Maintenance & Staffing',
+  '/': 'FourSync Services – Pest Management, Landscaping, MEP, Valet & Events',
   '/services': 'Services – FourSync Services',
   '/about': 'About – FourSync Services',
   '/contact': 'Contact – FourSync Services',
