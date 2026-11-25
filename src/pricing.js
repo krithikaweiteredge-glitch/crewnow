@@ -6,6 +6,7 @@ export const pricing = {
   'landscape-gardening': { type: 'area', low: 2, high: 5, min: 3000 },
   'mep-engineering': { type: 'flat', text: 'Call-out from ₹1,500', hint: 'Final price depends on the work. We scope it before we start.' },
   'valet-services': { type: 'flat', text: 'From ₹900 / shift', hint: 'Per valet. Tell us how many valets, the hours and the location and we’ll quote it.' },
+  'catering-hospitality': { type: 'flat', text: 'Quoted per head or event', hint: 'Tell us the number of guests, the menu style and the date and we’ll quote it.' },
   'event-management': { type: 'flat', text: 'Quoted per event', hint: 'Every event is different. Share the date, venue and guest count and we’ll prepare a quote.' },
 };
 

@@ -94,6 +94,10 @@ export default function Estimator() {
           </div>
         )}
 
+        <ul className="est-incl">
+          {svc.items.slice(0, 4).map((it) => <li key={it}><Check size={16} strokeWidth={3} />{it}</li>)}
+        </ul>
+
         <Link to={`/book?${q}`} className="btn btn-primary btn-lg">Book this job <ArrowRight size={18} /></Link>
         <p className="est-note"><Info size={14} /> Indicative range. You’ll get a fixed, itemised quote within 24 hours – no obligation.</p>
       </div>

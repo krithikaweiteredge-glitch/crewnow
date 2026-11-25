@@ -63,7 +63,7 @@ export function CountUp({ value, duration = 1600 }) {
 }
 
 // Big kinetic text strip. Duplicated once so the loop is seamless.
-const WORDS = ['Pest Management', 'Landscape & Gardening', 'MEP & Engineering', 'Valet Services', 'Event Management'];
+const WORDS = ['Pest Management', 'Landscape & Gardening', 'MEP & Engineering', 'Valet Services', 'Event Management', 'Catering & Hospitality'];
 export function Ticker() {
   const row = WORDS.map((w, i) => (
     <span key={w} className={i % 2 ? 'out' : ''}>{w}<i /></span>

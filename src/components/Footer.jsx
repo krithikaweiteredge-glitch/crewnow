@@ -12,7 +12,7 @@ export default function Footer() {
           <div>
             <Logo />
             <p style={{ maxWidth: 300 }}>
-              Pest management, landscaping, engineering, valet and events for businesses that expect more than “good enough”.
+              Pest management, landscaping, engineering, valet, events and catering for businesses that expect more than “good enough”.
             </p>
             <Link to="/book" className="btn btn-primary btn-sm">Get a free quote</Link>
           </div>
@@ -25,7 +25,7 @@ export default function Footer() {
           </div>
           <div>
             <h4>Services</h4>
-            {services.slice(0, 5).map((s) => (
+            {services.map((s) => (
               <Link key={s.id} to={`/book?service=${s.id}`}>{s.title}</Link>
             ))}
           </div>

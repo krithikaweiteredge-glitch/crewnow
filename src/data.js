@@ -1,26 +1,36 @@
-import { Bug, Trees, Wrench, Car, PartyPopper } from 'lucide-react';
+import { Bug, Trees, Wrench, Car, PartyPopper, UtensilsCrossed } from 'lucide-react';
 
-// The five main categories supplied by the client. Sub-services are not listed yet.
+// The six main categories and sub-categories supplied by the client, in the client's wording.
 export const services = [
   {
     id: 'pest-management', icon: Bug, title: 'Pest Management', tag: 'Preventive',
     short: 'Safe, discreet pest control with scheduled visits and clear service reports.',
+    items: ['General Pest Control', 'Bed Bug Treatment', 'Preventive Pest Management', 'Mosquito & Fly Control', 'Bird Control & Netting'],
   },
   {
     id: 'landscape-gardening', icon: Trees, title: 'Landscape & Gardening', tag: 'Green spaces',
     short: 'Design, planting and year-round care for gardens, lawns and green spaces.',
+    items: ['Garden Maintenance', 'Indoor & Outdoor Plant Maintenance', 'Plant Supply & Rental', 'Lawn Development & Maintenance'],
   },
   {
     id: 'mep-engineering', icon: Wrench, title: 'MEP & Engineering', tag: 'Planned and urgent',
     short: 'Mechanical, electrical and plumbing work by skilled technicians, from planned upkeep to urgent repairs.',
+    items: ['Electrical Maintenance', 'Plumbing & Sanitation', 'Civil & Structural Maintenance', 'Preventive & Corrective Maintenance'],
   },
   {
     id: 'valet-services', icon: Car, title: 'Valet Services', tag: 'Guest arrival',
     short: 'Trained, uniformed valets and parking teams for hotels, venues, hospitals and events.',
+    items: ['Corporate Valet drivers', 'Commercial Valet Services', 'Hospitality Valet Services', 'Event Valet drivers'],
   },
   {
     id: 'event-management', icon: PartyPopper, title: 'Event Management', tag: 'End to end',
     short: 'Planning and on-the-day delivery for corporate events, launches, weddings and exhibitions.',
+    items: ['Corporate Events', 'Conferences & Seminars', 'Product Launches', 'Annual Day Celebrations', 'Festive Celebrations', 'Stage & Venue Setup', 'Audio-Visual & Lighting', 'Event Décor & Florals', 'Entertainment & Artist Management'],
+  },
+  {
+    id: 'catering-hospitality', icon: UtensilsCrossed, title: 'Catering & Hospitality', tag: 'Corporate dining',
+    short: 'Corporate catering, cafeteria management and meal services, from daily meals to large events.',
+    items: ['Corporate Catering', 'Cafeteria Management', 'Corporate Meal Services', 'Packed Meal & Snack Services', 'Outdoor Catering', 'Live Food Counters'],
   },
 ];
 

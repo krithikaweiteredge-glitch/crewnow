@@ -20,6 +20,7 @@ export const serviceImages = {
   'mep-engineering': 9679179,
   'valet-services': 33353497,
   'event-management': 16935899,
+  'catering-hospitality': 39388383,
 };
 
 export const industries = [

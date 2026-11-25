@@ -10,7 +10,7 @@ export default function Services() {
     <>
       <PageHero
         eyebrow="Our services"
-        title="Five services. One accountable team."
+        title="Six services. One accountable team."
         text="Choose one service or combine several, with one quote and one invoice."
         crumb="Services"
       />
@@ -26,6 +26,9 @@ export default function Services() {
                 <span className="pill">{s.tag}</span>
                 <h2 style={{ fontSize: 'clamp(2.4rem,4.2vw,3.4rem)' }}>{s.title}</h2>
                 <p className="lead">{s.short}</p>
+                <ul className="ticks">
+                  {s.items.map((it) => <li key={it}><Check size={18} strokeWidth={3} />{it}</li>)}
+                </ul>
                 <Link to={`/book?service=${s.id}`} className="btn btn-primary">
                   Book this service <ArrowRight size={17} />
                 </Link>

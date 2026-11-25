@@ -98,7 +98,7 @@ export default function Home() {
               </span>
             </h1>
             <p className="lead">
-              Pest management, landscaping, MEP and engineering, valet and event teams, all under one roof. One trusted partner, one simple invoice, and nothing left for you to chase.
+              Pest management, landscaping, MEP and engineering, valet, events and catering, all under one roof. One trusted partner, one simple invoice, and nothing left for you to chase.
             </p>
             <div className="hero-cta">
               <Link to="/book" className="btn btn-primary btn-lg">Book a service <ArrowRight size={18} /></Link>
@@ -147,7 +147,7 @@ export default function Home() {
       <section className="statement">
         <div className="container">
           <span className="eyebrow">About FourSync</span>
-          <Statement text="We look after the buildings, grounds and events people depend on, so the people inside can get on with their day." accent={['people', 'day']} />
+          <Statement text="We look after the buildings, grounds, events and meals people depend on, so the people inside can get on with their day." accent={['people', 'day']} />
         </div>
       </section>
 
@@ -156,8 +156,8 @@ export default function Home() {
         <div className="container">
           <Reveal className="section-head center">
             <span className="eyebrow">What we do</span>
-            <h2>Five services. <span className="hl">One team behind them.</span></h2>
-            <p className="lead">From pest control and landscaping to engineering, valet and events, you get one trusted partner and one simple invoice.</p>
+            <h2>Six services. <span className="hl">One team behind them.</span></h2>
+            <p className="lead">From pest control and landscaping to engineering, valet, events and catering, you get one trusted partner and one simple invoice.</p>
           </Reveal>
           <Tilt className="svc-grid">
             {services.map((s, i) => {
@@ -172,6 +172,9 @@ export default function Home() {
                   <div className="body">
                     <h3>{s.title}</h3>
                     <p>{s.short}</p>
+                    <ul className="subs" aria-label={`${s.title} services`}>
+                      {s.items.map((it) => <li key={it}>{it}</li>)}
+                    </ul>
                     <span className="arrow-link">Book now <ArrowRight size={16} /></span>
                   </div>
                 </Reveal>

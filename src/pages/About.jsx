@@ -17,7 +17,7 @@ export default function About() {
       <PageHero
         eyebrow="About us"
         title="The people behind every well-kept site."
-        text="FourSync is a facility-services company covering pest management, landscaping, MEP and engineering, valet and events."
+        text="FourSync is a facility-services company covering pest management, landscaping, MEP and engineering, valet, events and catering."
         image={photos.team}
         crumb="About"
       />
@@ -33,7 +33,7 @@ export default function About() {
             <span className="eyebrow">Our story</span>
             <h2>Built because good service <span className="hl">shouldn’t be rare.</span></h2>
             <p className="lead">
-              FourSync began when we saw facility managers juggling a different vendor for pest control, landscaping, repairs, parking and events, and spending their days chasing every one of them.
+              FourSync began when we saw facility managers juggling a different vendor for pest control, landscaping, repairs, parking, events and catering, and spending their days chasing every one of them.
             </p>
             <p style={{ color: 'var(--muted)' }}>
               So we built one agency that does it all, with trained crews, honest communication and fixed pricing. Today we look after hundreds of offices, clinics, stores and campuses, and we still answer our own phones.
