@@ -15,6 +15,7 @@ export default function Book() {
   const pre = params.get('service');
 
   const [picked, setPicked] = useState(() => (services.some((s) => s.id === pre) ? [pre] : []));
+  const [subs, setSubs] = useState({}); // { serviceId: [sub-category, …] }
   const [v, setV] = useState({
     company: '', name: '', email: '', phone: '', address: '',
     size: params.get('size') || '', frequency: FREQ.includes(params.get('frequency')) ? params.get('frequency') : 'One-time', date: params.get('date') || '', time: 'Flexible', notes: '', _hp: '',
@@ -31,6 +32,15 @@ export default function Book() {
     setPicked((p) => (p.includes(id) ? p.filter((x) => x !== id) : [...p, id]));
     setErrors((o) => ({ ...o, services: false }));
   };
+
+  const toggleSub = (id, item) => {
+    setSubs((o) => {
+      const cur = o[id] || [];
+      return { ...o, [id]: cur.includes(item) ? cur.filter((x) => x !== item) : [...cur, item] };
+    });
+  };
+  // picked services in the order they are listed on the page
+  const chosen = services.filter((s) => picked.includes(s.id));
 
   const validate = () => {
     const e = {};
@@ -51,8 +61,13 @@ export default function Book() {
     }
 
     const names = picked.map((id) => services.find((s) => s.id === id).title).join(', ');
+    const details = chosen.map((s) => {
+      const list = s.items.filter((it) => subs[s.id]?.includes(it));
+      return `${s.title}: ${list.length ? list.join(', ') : 'not specified'}`;
+    }).join(' | ');
     const data = {
       'Services requested': names,
+      'Sub-categories': details,
       Company: v.company,
       'Contact person': v.name,
       Email: v.email,
@@ -117,6 +132,19 @@ export default function Book() {
                 })}
               </div>
               <p className={`err ${errors.services ? 'show' : ''}`}>Please select at least one service.</p>
+              {chosen.map((s) => (
+                <div className="subpick" role="group" aria-labelledby={`sub-${s.id}`} key={s.id}>
+                  <p className="lbl" id={`sub-${s.id}`}>{s.title}: what do you need? <small>(optional)</small></p>
+                  <div className="subchips">
+                    {s.items.map((it) => (
+                      <label className="chip" key={it}>
+                        <input type="checkbox" checked={!!subs[s.id]?.includes(it)} onChange={() => toggleSub(s.id, it)} />
+                        <span>{it}</span>
+                      </label>
+                    ))}
+                  </div>
+                </div>
+              ))}
             </fieldset>
 
             <fieldset>

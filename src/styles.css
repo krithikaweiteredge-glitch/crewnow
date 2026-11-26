@@ -284,6 +284,10 @@ legend .n { width: 36px; height: 36px; border-radius: 11px; background: var(--su
 .chip input:checked + span { border-color: var(--royal); background: var(--sun-soft); color: var(--ink); box-shadow: 0 0 0 3px rgba(140,106,28,.16); }
 .chip input:checked + span svg { color: var(--royal); }
 .chip input:focus-visible + span { outline: 3px solid var(--navy); outline-offset: 2px; }
+.subpick { margin-top: 22px; }
+.subpick .lbl small { font-weight: 500; color: var(--muted); }
+.subchips { display: flex; flex-wrap: wrap; gap: 8px; }
+.subchips .chip span { padding: 9px 15px; border-radius: 999px; font-size: .86rem; }
 .hp { position: absolute; left: -9999px; opacity: 0; height: 0; overflow: hidden; }
 .form-error { background: #fdecef; color: #a52b3d; border-radius: 12px; padding: 14px 18px; font-weight: 700; margin-bottom: 18px; }
 .fine { color: var(--muted); font-size: .84rem; text-align: center; margin: 16px 0 0; }
